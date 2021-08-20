@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <script src="lib/calculo.js"></script>
+	<link rel="stylesheet" type="text/css" href="lib/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+ 
+</head>
+<body>
+ <div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-8 offset-4">
+			<br>
+			Insira sua altura:
+			<br>
+			<input type="text" name="altura" id="altura">
+			<br>
+			Insira seu peso:
+			<br>
+			<input type="text" name="peso" id="peso">
+			<br>
+			<br>
+			<h1>Seu IMC é:</h1>
+			<h1 id="result"></h1>
+			<button type="button" class="btn btn-outline-primary"  onclick="calculo()">Calcular</button>
+			<button type="button" class="btn btn-outline-warning"  onclick="limpar()">Limpar</button>
+			<br>
+			<br>
+			<div id="imagem">
+				<img src="lib/Tabela.png" id="foto">
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
